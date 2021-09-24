@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background: url(https://i.postimg.cc/9XPnN26S/bggg.jpg);
+        height: 100%;
+      }
+    </style>
+    <title>Cash manager</title>
+  </head>
+  <body>
+    <div
+    >
+      <h1 >Cash Manager.</h1>
+      <h3 ">
+        Enter the bill amount and cash given by the customer and know minimum
+        number of notes to return.
+      </h3>
+      <div >
+        <p for="billAmt">Bill Amount</p>
+        <input
+          type="number"
+          name="billAmt"
+          id="billAmt"
+          autofocus
+        />
+      </div>
+      <button id="btnNext" >
+        Next
+      </button>
+    <div>
+        <p for="receivedAmt" id="receivedMsg" hidden>Cash Received</p>
+        <input
+          type="number"
+          name="receivedAmt"
+          style="margin-left: 14rem"
+          hidden
+          id="receivedAmt"
+          autofocus
+        />
+      </div>
+      <input
+        type="button"
+        hidden
+        value="Calculate"
+        id="btnCheck"
+        style="margin-left: 36rem; width: 24rem; "
+      />
+      <h3 id="message"></h3>
+      <table id="output-table" style="margin-left: 36rem; padding: 5px" hidden>
+        <tr >
+          <th style="padding: 5px; border: 2px solid cadetblue">No of Notes</th>
+          <td style="padding: 5px; border: 2px solid cadetblue" class="no-of-notes"></td>
+          <td style="padding: 5px; border: 2px solid cadetblue" class="no-of-notes"></td>
+          <td style="padding: 5px; border: 2px solid cadetblue" class="no-of-notes"></td>
+          <td style="padding: 5px; border: 2px solid cadetblue" class="no-of-notes"></td>
+          <td style="padding: 5px; border: 2px solid cadetblue" class="no-of-notes"></td>
+          <td style="padding: 5px; border: 2px solid cadetblue" class="no-of-notes"></td>
+          <td style="padding: 5px; border: 2px solid cadetblue" class="no-of-notes"></td>
+        </tr>
+        <tr>
+          <th style="padding: 5px; border: 2px solid cadetblue">Notes</th>
+          <td style="padding: 5px; border: 2px solid cadetblue">2000</td>
+          <td style="padding: 5px; border: 2px solid cadetblue">500</td>
+          <td style="padding: 5px; border: 2px solid cadetblue">100</td>
+          <td style="padding: 5px; border: 2px solid cadetblue">20</td>
+          <td style="padding: 5px; border: 2px solid cadetblue">10</td>
+          <td style="padding: 5px; border: 2px solid cadetblue">5</td>
+          <td style="padding: 5px; border: 2px solid cadetblue">1</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
